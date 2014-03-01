@@ -97,7 +97,14 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
+/*
+ * Image resizing in header
+ */
+#sub-header img { 
+  max-width:200px; /* you can use % */
+  max-height:60px;
+  height: auto;
+}
 
 
 
