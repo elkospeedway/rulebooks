@@ -104,21 +104,39 @@ textarea {
   max-width:200px; /* you can use % */
   max-height:60px;
   height: auto;
+  padding: 4px 12px;
 }
 
+#header {
+  text-align: center;
+}
 
+.title {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 0.67em;
+}
 
+body {
+  counter-reset: section subsection;
+}
 
+h1 {
+  counter-increment: section;
+  counter-reset: subsection;
+}
 
+h2 {
+  counter-increment: subsection;
+}
 
+h1:before {
+  content: counter(section) '. ';
+}
 
-
-
-
-
-
-
-
+h2:before {
+  content: counter(section) '.' counter(subsection) '. ';
+}
 
 /* ==========================================================================
    Helper classes
