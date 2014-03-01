@@ -139,28 +139,17 @@ h2:before {
 }
 
 ol {
-  list-style: none;
-  counter-reset: olfirst;
-}
-
-ol ol {
-  counter-reset: olsecond;
+  list-style: none outside none;
+  counter-reset: clause;
+  margin: 0;
 }
 
 ol li {
-  counter-increment: olfirst;
-}
-
-ol li ol li {
-  counter-increment: olsecond;
+  counter-increment: clause;
 }
 
 ol li:before {
-  content: counter(olfirst) '. ';
-}
-
-ol li ol li:before {
-  content: counter(olfirst) '.' counter(olsecond) '. ';
+  content: counters(clause, '.') '. ';
 }
 
 /* ==========================================================================
