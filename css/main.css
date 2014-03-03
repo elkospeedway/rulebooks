@@ -131,11 +131,11 @@ h2 {
 }
 
 h1:before {
-  content: counter(section) '. ';
+  content: counter(section) ' ';
 }
 
 h2:before {
-  content: counter(section) '.' counter(subsection) '. ';
+  content: counter(section) '.' counter(subsection) ' ';
 }
 
 ol {
@@ -153,11 +153,11 @@ ol li:before {
 }
 
 h1+ol li:before {
-  content: counter(section) '.' counters(clause, '.') '. ';
+  content: counter(section) '.' counters(clause, '.') ' ';
 }
 
 h2+ol li:before {
-  content: counter(section) '.' counter(subsection) '.' counters(clause, '.') '. ';
+  content: counter(section) '.' counter(subsection) '.' counters(clause, '.') ' ';
 }
 
 /* ==========================================================================
