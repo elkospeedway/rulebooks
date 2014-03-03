@@ -148,6 +148,10 @@ ol li {
   counter-increment: clause;
 }
 
+ol li:before {
+  font-weight: bold;
+}
+
 h1+ol li:before {
   content: counter(section) '.' counters(clause, '.') '. ';
 }
